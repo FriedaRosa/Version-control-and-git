@@ -1,5 +1,10 @@
-/.quarto/
+# Quarto generated files
+.quarto/
 *_cache/
+*_files/
 *.log
+
+# Rendered presentation
+# presentation.html
 
 **/*.quarto_ipynb
