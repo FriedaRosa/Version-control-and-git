@@ -228,56 +228,39 @@ Friederike Wölke
 
   <p class="date">2026-10-17</p>
 </section>
-<section>
-<section id="section" class="title-slide slide level1 center">
-<h1></h1>
+<section class="slide level2">
+
 <p><img data-src="img/AmStat_Excuse_Me.png"><br>
 </p>
 </section>
+<section id="learning-objectives" class="slide level2">
+<h2>Learning objectives</h2>
+<ul>
+<li>understand the benefits of version control</li>
+<li>know where to find help when setting up Git and GitHub on your computer</li>
+<li>understand the concept of: <code>stage</code> (<code>add</code>), <code>commit</code>, <code>push</code>, <code>pull</code>, <code>clone</code></li>
+<li>work with GitHub repositories from the command line, RStudio, Visual Studio Code, Positron… (wherever you do your coding)</li>
+</ul>
+</section>
 <section id="version-control---what-is-it" class="slide level2">
 <h2>Version control - What is it?</h2>
-<p><img data-src="img/final_doc.png" class="absolute" style="top: 100px; left: 0px; "> <span class="citation" data-cites="swcarpentry_gitnovice">(Sources: https://phdcomics.com/comics/archive.php?comicid=1531, <a href="#/references" role="doc-biblioref" onclick="">The Carpentries 2025</a>)</span></p>
+<p><img data-src="img/final_doc.png" class="absolute" style="top: 100px; left: 0px; "> <span class="citation" data-cites="swcarpentry_gitnovice">(Sources: <a href="https://phdcomics.com/comics/archive.php?comicid=1531">PhD Comics “Final.doc”</a>, <a href="#/references" role="doc-biblioref" onclick="">The Carpentries 2025</a>)</span></p>
 <p><img data-src="img/examples_Carpentries.png" class="absolute" style="top: 100px; right: 115px; width: 700px; "></p>
 </section>
 <section id="what-is-git" class="slide level2">
 <h2>What is git?</h2>
 
 <img data-src="img/git_source_code-2005.png" class="r-stretch"><ul>
-<li><p>fast</p></li>
-<li><p>optimal for non-linear workflows</p></li>
-<li><p>strong safegueards against file corruption</p></li>
+<li>fast</li>
+<li>optimal for non-linear workflows</li>
+<li>strong safeguards against file corruption</li>
 </ul>
 </section>
-<section id="git-or-github" class="slide level2">
-<h2>Git or GitHub?</h2>
-<div class="columns">
-<div class="r-fit-text">
-<div class="column" style="width:50%;">
-<h3 id="git">Git</h3>
-<p><img data-src="img/Git_logo.png" height="100"></p>
-<ul>
-<li><p>local software (offline)</p></li>
-<li><p>tracks file changes</p></li>
-<li><p>needs to be installed (it’s free)</p></li>
-<li><p>works natively in the terminal</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<h3 id="github">GitHub</h3>
-<p><img data-src="img/GitHub_logo.png" height="100"></p>
-<ul>
-<li><p>data host and distribution server (owned by Microsoft)</p></li>
-<li><p>more features: collaboration, project management, publishing, ‘Actions’</p></li>
-<li><p>account needed (it’s free)</p></li>
-<li><p>works from web, terminal, GUI (GitHub Desktop)</p></li>
-</ul>
-</div></div>
-</div>
-</section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning objectives</h2>
-</section>
-<section id="you-already-know-the-problem" class="slide level2">
-<h2>You already know the problem</h2>
+<section id="we-all-know-the-problem" class="slide level2">
+<h2>We all know the problem</h2>
+
+<img data-src="img/Bryan2018_Fig1_bgrm.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="Bryan2018">(<a href="#/references" role="doc-biblioref" onclick="">Bryan 2018</a>)</span></p><p><span class="large-text">The moment when two (or more) coauthors send you their own version of the manuscript with tracked changes and you have to figure out how to combine it all …</span></p>
+<p><span class="large-text"><strong>???</strong></span></p>
 </section>
 <section id="git-three-main-concepts" class="slide level2">
 <h2>Git: three main concepts</h2>
@@ -288,6 +271,20 @@ Friederike Wölke
 </ol>
 <p><strong>Git is not a backup folder.</strong> It is a timeline of deliberate project snapshots.</p>
 </section>
+<section id="vocabulary1" class="slide level2">
+<h2>Vocabulary<sup>1</sup></h2>
+<div class="r-fit-text">
+<p><code>Version Control</code> A system for maintaining current and past copies of all of your files and a record of all the changes you have made;</p>
+<p><code>git</code> Version control software for tracking your project on your local computer</p>
+<p><code>GitHub</code> A free, public remote website where your project is permanently hosted</p>
+<p><code>Repository</code> Any collection of files that belong to the same project, plus a few special git files that set up the version control. Also called a repo by hipster programmers.</p>
+<p><code>Clone</code> Create a local copy of a repository from the GitHub website to your own website. You can clone from your own repository or anyone else’s that is posted on GitHub. Once the files are on your local computer you can edit or use them as you like. However, you can only change files on GitHub for the repositories that you yourself created or for projects that you have been invited to collaborate on with others.</p>
+<p><code>Commit (the noun)</code> A snapshot of your file system at a particular time. Since your last commit, it keeps track of the files you currently have, the ones you have deleted or added, and any changes you have made to files. Each commit has a unique identifier (“SHA”)</p>
+<p><code>Commit (the verb)</code> When you commit, you are taking a snapshot of your files at the current time. You must add a summary of the commit that briefly describes what changes you have made (such as “add new homework file”). Note that all commits affect only the local copy of your repository. They do not affect the remote copy that is stored on GitHub</p>
+<p><code>Push</code> Pushing a set of changes means copying them from your local repository up to GitHub.</p>
+<p><code>Pull(=fetch)</code> Pulling means copying the repository in its current state on GitHub down to your local repository. This would incorporate any changes that others have made (and pushed) in a collaborative project.</p>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="gotelli_github2025">Gotelli (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p></li></ol></aside></section>
 <section id="git-is-language-agnostic" class="slide level2">
 <h2>Git is language-agnostic</h2>
 <p>Git does not care whether the file is Python, R, Bash, Markdown, or a dataset.</p>
@@ -298,10 +295,10 @@ Friederike Wölke
 <span id="cb1-5"><a href=""></a>├── report.qmd</span>
 <span id="cb1-6"><a href=""></a>└── data/</span>
 <span id="cb1-7"><a href=""></a>    └── observations.csv</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Git tracks <strong>files and their history</strong>. Your Python environment, R packages, and shell are separate concerns that we can record alongside the code.</p>
+<p>Git tracks <strong>files and their history</strong>. Your Python environment, R packages, and shell are separate concerns that we can record alongside the code (e.g., in R using <code>renv</code> lockfiles or in python using <code>requirements.txt</code> files)</p>
 </section>
-<section id="the-map-three-places-a-change-can-live" class="slide level2">
-<h2>The map: three places a change can live</h2>
+<section id="three-places-where-a-change-can-live" class="slide level2">
+<h2>Three places where a change can live</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 33%">
@@ -334,25 +331,112 @@ Friederike Wölke
 </tbody>
 </table>
 </section>
-<section id="benefits-of-web-hosting-on-github-gitlab-bitbucket-or-similar" class="slide level2">
-<h2>Benefits of web-hosting on GitHub, GitLab, BitBucket, or similar</h2>
+<section id="git-or-github" class="slide level2">
+<h2>Git or GitHub?</h2>
+<div class="columns">
 <div class="r-fit-text">
+<div class="column" style="width:50%;">
+<h3 id="git">Git</h3>
+<p><img data-src="img/Git_logo.png" height="100"></p>
 <ul>
-<li><p>Organizing, recording, and disseminating your work - Exposure prevents neglecting these tasks</p></li>
-<li><p>Structured collaboration and access to powerful tools for asynchronous work</p></li>
-<li><p>create your own web site in 60 seconds</p></li>
-<li><p>can be turned into citable content (add CITATION.txt file or connect to Zenodo and get a DOI)</p></li>
-<li><p>acts as sharable lab notebook for computational work</p></li>
+<li>local software (offline)</li>
+<li>tracks file changes</li>
+<li>needs to be installed (it’s free)</li>
+<li>works natively in the terminal</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<h3 id="github">GitHub</h3>
+<p><img data-src="img/GitHub_logo.png" height="100"></p>
+<ul>
+<li>Remote code hosting and collaboration platform (owned by Microsoft)</li>
+<li>Common alternatives: Bitbucket and GitLab (some instances are self-hosted by universities)</li>
+<li>Additional features include collaboration, project management, publishing, and Actions</li>
+<li>Free account required</li>
+<li>Works via the web, terminal, and GUI clients (such as GitHub Desktop)</li>
+</ul>
+</div></div>
 </div>
 </section>
+<section id="benefits2-of-web-hosting-on-github-gitlab-bitbucket-or-similar" class="slide level2">
+<h2>Benefits<sup>1</sup> of web-hosting on GitHub, GitLab, Bitbucket, or similar</h2>
+<div class="r-fit-text">
+<ul>
+<li><p>Organizing, recording, and disseminating your work - exposure prevents neglecting these tasks</p></li>
+<li><p>Structured collaboration and access to powerful tools for asynchronous work</p></li>
+<li><p>Creating web sites in 60 seconds</p></li>
+<li><p>Can be turned into citable content (add <code>CITATION.txt</code> file or connect to Zenodo and get a DOI)</p></li>
+<li><p>Acts as shareable lab notebook for computational work</p></li>
+</ul>
+</div>
+<aside><ol class="aside-footnotes"><li id="fn2"><p><span class="citation" data-cites="Bryan2018">Bryan (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></p></li></ol></aside></section>
 <section id="setting-up-git-andor-github" class="slide level2">
 <h2>Setting up git and/or GitHub</h2>
-<p>This step is always very painful you do it the first time. <span class="accent"><strong>Brace yourself!!</strong></span></p>
-<p>Once you have it set up, you can use it forever and don’t have to worry about it anymore.</p>
+<p>This step is always very painful. <strong>Brace yourself!!</strong></p>
 <p>I’ve collated information from multiple sources<sup>1</sup> to make it as painless as possible.</p>
-<p>You can see and download the setup instructions as a PDF from <a href="LINK">here</a></p>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Sources include <span class="citation" data-cites="ssoqe_versioncontrol">SSoQE; Ondřej Mottl (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>, <span class="citation" data-cites="naturhistoriska_gitgithubintro">Naturhistoriska riksmuseet, Johan Nylander (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>, <span class="citation" data-cites="gotelli_github2025">Gotelli (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>, <span class="citation" data-cites="Bryan2018">Bryan (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>, <span class="citation" data-cites="rodrigues_git2024">Rodrigues (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>, <span class="citation" data-cites="posit_versioncontrol">Posit Software, PBC (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>, <span class="citation" data-cites="bryan_happygit">Bryan and Hester (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>, and <span class="citation" data-cites="swcarpentry_gitnovice">The Carpentries (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>.</p></li></ol></aside></section>
+<p>You will be able to see and download the setup instructions as a PDF from here.</p>
+<aside><ol class="aside-footnotes"><li id="fn3"><p><span class="citation" data-cites="ssoqe_versioncontrol">SSoQE; Ondřej Mottl (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>, <span class="citation" data-cites="naturhistoriska_gitgithubintro">Naturhistoriska riksmuseet, Johan Nylander (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>, <span class="citation" data-cites="gotelli_github2025">Gotelli (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span>, <span class="citation" data-cites="Bryan2018">Bryan (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>, <span class="citation" data-cites="rodrigues_git2024">Rodrigues (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>, <span class="citation" data-cites="posit_versioncontrol">Posit Software, PBC (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span>, <span class="citation" data-cites="bryan_happygit">Bryan and Hester (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>, and <span class="citation" data-cites="swcarpentry_gitnovice">The Carpentries (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></p></li></ol></aside></section>
+<section id="workflows-in-github" class="slide level2">
+<h2>Workflows in Git(Hub)</h2>
+<p>After initializing a folder as a git repository (<code>git init</code> or <code>git clone</code>)</p>
+<ol type="1">
+<li>Create files, make changes</li>
+<li><code>git status</code></li>
+<li>stage changes: <code>git add -A</code></li>
+<li>commit to make a snapshot: <code>git commit -am "Commit Message"</code><br>
+<span class="accent"><strong>Do this frequently!</strong></span></li>
+<li><code>git status</code></li>
+<li>Upload commits to GitHub: <code>git push</code></li>
+<li>Download latest version from GitHub: <code>git pull</code></li>
+<li><code>git status</code></li>
+</ol>
+<p><strong>repeat #1-8</strong></p>
+</section>
+<section id="which-files-to-track" class="slide level2">
+<h2>Which files to track?</h2>
+<p>Depends on your aims. Usually:</p>
+<p><strong>Track:</strong></p>
+<ul>
+<li>source files (files that are created and edited by hand: scripts, raw data, metadata)</li>
+<li>derived products with external value (e.g., figures, tables, reports)</li>
+<li>configuration files (e.g., .Rproj, .gitignore)</li>
+</ul>
+<p><strong>Ignore:</strong></p>
+<ul>
+<li>intermediates (e.g.&nbsp;log files, temporary files generated from source files)</li>
+</ul>
+</section>
+<section id="prerequisites-for-happy-gitting" class="slide level2">
+<h2>Prerequisites for happy ‘gitting’</h2>
+<ul>
+<li>have git installed</li>
+<li>have your credentials configured on your local machine</li>
+<li>have a GUI that you like and feel comfortable with
+<ul>
+<li>I like the built-in git GUI in Visual Studio Code but also use GitHub Desktop and the RStudio-panel</li>
+</ul></li>
+<li>establish a routine (<code>commit</code> frequently, <code>push</code> often)</li>
+<li>if you switch between different machines or collaborate with others <em>always</em> start with synchronizing the changes to your current machine <code>pull</code> or <code>fetch</code></li>
+</ul>
+</section>
+<section id="establish-a-routine-when-working-solo" class="slide level2">
+<h2>Establish a routine when working solo</h2>
+<ul>
+<li>use <em>projects</em> (R projects, Python projects, Positron folders/projects, VSC workspaces), i.e., <strong>dedicate a specific folder to each project</strong></li>
+<li>initialize <em>local folders</em> as git repositories</li>
+<li>initialize <em>new folders</em> for future projects directly as git repositories</li>
+<li><em>stage</em> changes that you want to keep</li>
+<li><em>commit</em> them to the repository and write a summary what was changed (<strong>annotation!!</strong>)</li>
+<li>split <em>commits</em> thematically into smaller bits</li>
+<li>big change: create a <em>branch</em>
+<ul>
+<li>if you are happy: <code>merge</code> the branch into your <code>main branch</code></li>
+<li>if you are not happy: delete, archive, or ignore and switch back to <code>main</code></li>
+</ul></li>
+<li>after a <em>milestone</em> is reached or at the end of the day: <code>push</code></li>
+<li>when working on <em>different machines</em> or editing files via the <em>web browser</em>: <code>pull</code> often to avoid critical errors</li>
+<li>use issues on GitHub to track your own to-dos for your project</li>
+</ul>
+</section>
 <section id="references" class="slide level2 smaller scrollable">
 <h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
@@ -382,7 +466,7 @@ The Carpentries. 2025. <span>“Version Control with Git.”</span> 2025. <a hre
 </div>
 </div>
 
-</section></section>
+</section>
 
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
