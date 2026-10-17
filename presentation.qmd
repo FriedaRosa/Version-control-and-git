@@ -1,0 +1,170 @@
+---
+title: "Version control & Git"
+subtitle: "A guide for people who already use Bash, Python, and R"
+author: "Friederike Wölke"
+date: last-modified
+bibliography: references.bib
+format:
+  revealjs:
+    theme: default
+    slide-number: c/t
+    width: 1600
+    height: 900
+    margin: 0.08
+    transition: fade
+    background-transition: fade
+    controls: true
+    navigation-mode: linear
+execute:
+  echo: true
+---
+
+# 
+![](img/AmStat_Excuse_Me.png)\
+
+
+---
+
+## Version control - What is it?
+
+
+![](img/final_doc.png){.absolute top="100" left="0"} 
+[Sources: https://phdcomics.com/comics/archive.php?comicid=1531, @swcarpentry_gitnovice]
+
+![](img/examples_Carpentries.png){.absolute top="100" right="115" width="700"} 
+
+---
+
+## What is git?
+
+
+![](img/git_source_code-2005.png)
+
+- fast
+
+- optimal for non-linear workflows
+
+- strong safegueards against file corruption
+
+
+---
+
+## Git or GitHub?
+
+:::::: columns
+::::: r-fit-text
+::: {.column width="50%"}
+### Git
+
+![](img/Git_logo.png){height="100"}
+
+- local software (offline)
+
+- tracks file changes
+
+- needs to be installed (it's free)
+
+- works natively in the terminal
+:::
+
+::: {.column width="50%"}
+### GitHub
+
+![](img/GitHub_logo.png){height="100"}
+
+- data host and distribution server (owned by Microsoft)
+
+- more features: collaboration, project management, publishing, 'Actions'
+
+- account needed (it's free)
+
+- works from web, terminal, GUI (GitHub Desktop)
+:::
+:::::
+::::::
+
+---
+
+
+## Learning objectives
+
+
+---
+
+
+## You already know the problem
+
+
+---
+
+## Git: three main concepts
+
+1. **Snapshot**: save a meaningful state of your project.
+2. **Compare**: see exactly what changed, and when.
+3. **Recover**: return to a known-good state when an experiment goes sideways.
+
+**Git is not a backup folder.** It is a timeline of deliberate project snapshots.
+
+---
+
+## Git is language-agnostic
+
+Git does not care whether the file is Python, R, Bash, Markdown, or a dataset.
+
+```text
+project/
+├── analysis.py
+├── model.R
+├── run.sh
+├── report.qmd
+└── data/
+    └── observations.csv
+```
+
+Git tracks **files and their history**. Your Python environment, R packages, and shell are separate concerns that we can record alongside the code.
+
+---
+
+## The map: three places a change can live
+
+| Place | Meaning | Git command |
+|---|---|---|
+| **Working folder** | Your files right now. You can edit, run, and inspect them. | `git status` , `git diff` | 
+| **Staging area** | A review basket: the exact changes you want in the next snapshot. | `git add` |
+| **Repository** | The saved timeline of snapshots, called commits. | `git commit` |
+
+---
+
+## Benefits of web-hosting on GitHub, GitLab, BitBucket, or similar
+::: r-fit-text
+- Organizing, recording, and disseminating your work - Exposure prevents neglecting these tasks
+
+- Structured collaboration and access to powerful tools for asynchronous work
+
+- create your own web site in 60 seconds
+
+- can be turned into citable content (add CITATION.txt file or connect to Zenodo and get a DOI)
+
+- acts as sharable lab notebook for computational work
+:::
+---
+
+## Setting up git and/or GitHub
+
+This step is always very painful you do it the first time. [**Brace yourself!!**]{.accent}
+
+Once you have it set up, you can use it forever and don't have to worry about it anymore. 
+
+I've collated information from multiple sources^[Sources include @ssoqe_versioncontrol, @naturhistoriska_gitgithubintro, @gotelli_github2025, @Bryan2018, @rodrigues_git2024, @posit_versioncontrol, @bryan_happygit, and @swcarpentry_gitnovice.] to make it as painless as possible. 
+
+You can see and download the setup instructions as a PDF from [here]( LINK )
+
+
+
+---
+
+
+## References
+
+::: {#refs}
+:::
