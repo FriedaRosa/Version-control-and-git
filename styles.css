@@ -1,0 +1,34 @@
+/* Presentation-wide typography and reusable text colors. */
+.reveal {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  color: #24332f;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: #176b68;
+}
+
+.reveal .accent {
+  color: #d95f45;
+}
+
+.reveal .strong {
+  color: #176b68;
+  font-weight: 700;
+}
+
+.reveal .large-text {
+  font-size: 1.35em;
+}
+
+.reveal strong {
+  color: #d95f45;
+}
+
+.reveal em {
+  color: #176b68;
+}
