@@ -8,3 +8,5 @@
 # presentation.html
 
 **/*.quarto_ipynb
+
+/.quarto/
