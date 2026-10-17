@@ -3,7 +3,7 @@ project:
 
 format:
   revealjs:
-    theme: serif
+    theme: default
     css: styles.css
     slide-number: c/t
     width: 1600

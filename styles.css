@@ -1,6 +1,6 @@
 /* Presentation-wide typography and reusable text colors. */
 .reveal {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Aptos, "Segoe UI", Arial, sans-serif;
   font-size: 32px;
   color: #24332f;
 }
