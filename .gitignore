@@ -10,3 +10,4 @@
 **/*.quarto_ipynb
 
 /.quarto/
+_freeze
