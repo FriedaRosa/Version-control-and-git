@@ -181,7 +181,7 @@ I've collated information from multiple sources[^3] to make it as painless as po
 
 [^3]: @ssoqe_versioncontrol, @naturhistoriska_gitgithubintro, @gotelli_github2025, @Bryan2018, @rodrigues_git2024, @posit_versioncontrol, @bryan_happygit, and @swcarpentry_gitnovice
 
-You will be able to see and download the setup instructions as a PDF from here.
+You will be able to see and download the setup instructions as a .qmd file from [here]("Setting-up-git.qmd").
 
 ------------------------------------------------------------------------
 
