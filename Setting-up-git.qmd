@@ -1,0 +1,140 @@
+---
+title: "Setting up Git"
+subtitle: '... and GitHub'
+date: last-modified
+date-format: long
+author:
+  - name: 'Friederike Wölke'
+    orcid: 0000-0001-9034-4883
+    email: friederike.wolke@su.se
+format: 
+  html:
+    toc: true
+    number-sections: true
+    toc-location: right
+    code-fold: false
+    collapse: true
+    smooth-scroll: true
+    html-math-method: katex
+    search: true
+    repo-url: https://github.com/friedarosa/Version-control-and-git/
+self-contained: true
+code-overflow: wrap
+editor: source
+editor_options: 
+  chunk_output_type: console
+comments:
+  hypothesis: true
+---
+
+## Installing git
+
+Before you start, check whether you already have git:
+
+```{r}
+#| eval: false
+# Request the path to your git.exe
+which git
+
+# Request the version of your git installation
+git --version
+```
+
+if the return is something like the message below you need to install it. 
+```{r}
+#| eval: false
+git: command not found
+```
+
+----
+
+Mac users may be prompted help immediately and they should accept. 
+
+
+If you are not offered to have it installed for you, install it manually: 
+
+- visit [https://git-scm.com/install/](https://git-scm.com/install/) 
+- find the right version for your local machine (Mac, Linux)
+
+
+On **Linux**
+```{r}
+#| eval: false
+sudo apt-add-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+
+
+# keep it up to date
+sudo apt-get update && sudo apt-get install git
+```
+
+On **Mac** via [Homebrew](https://brew.sh/)
+```{r}
+#| eval: false
+brew install git
+
+# keep it up to date
+brew update && brew upgrade git
+```
+
+On **Windows**, install [gitforwindows](https://gitforwindows.org/).
+It comes with the Git bash which gives access to the Bash shell in addition to git.
+If you already have git installed, it may be good to update it (via shell/git command line)
+
+```{r}
+#| eval: false
+
+git update-git-for-windows
+
+```
+
+
+
+## Configure your credentials
+
+Below you will need an account with *GitHub*, *GitLab* or *Bitbucket* (or similar). When asked to enter your `user.email`, use the one you have registered with a host server. Your `user.name` can be anything you feel comfortable with, but best is your actual name. 
+If you don't want to sign up to a host server, you can use anything that looks like a valid email address. It will be stored in the metadata of the commits.
+
+### via command line
+Now you have to decide on an email-address and a name you want git to associate with you. We can do this via the command line (bash shell):
+
+```{r}
+#| eval: false
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+### in R via `usethis`
+We can also do it in R via the `usethis` (or `devtools`) package
+```{r}
+#| eval: false
+
+library(usethis) ## or library(devtools)
+use_git_config(
+  user.name = "Jane Doe", 
+  user.email = "jane@example.com"
+  )
+
+# check by running a git situation-report:
+# - your user.name and user.email should appear in global Git config
+git_sitrep()
+
+
+# to connect to GitHub you need a PAT (personal access token):
+usethis::create_github_token()
+
+# Now put your PAT into the git credentials store:
+gitcreds::gitcreds_set()
+```
+
+### in Visual Studio Code
+
+In VSC git can be used via the `Source Control` panel. To connect your repository to github, you need to:
+
+1. open the command palette (`Ctrl+Shift+P`) and run *Publish to GitHub*
+2. Sign in when prompted and return to VSC
+3. Enter an available repository name and chose *private* or *public*
+4. Make changes in your folder
+5. stage (`add`) and `commit` them to the repository
+6. `push` them to GitHub
