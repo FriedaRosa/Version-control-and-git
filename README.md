@@ -1,6 +1,6 @@
 # Version Control and Git
 
-A teaching resource introducing version control concepts, Git, and GitHub workflows. This repository contains presentation materials, practical setup instructions, and supporting resources developed using Quarto.
+A teaching resource introducing version control concepts, Git, and GitHub workflows. This repository contains presentation materials, practical setup instructions, and supporting resources developed using Quarto. Find the website with all materials here: https://friedarosa.github.io/Version-control-and-git/
 
 ## Overview
 
