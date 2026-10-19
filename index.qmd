@@ -1,0 +1,77 @@
+---
+title: "Version Control & Git"
+subtitle: "A practical field guide for your next project"
+---
+
+::::: hero
+::: eyebrow
+TRAINING MATERIALS
+:::
+
+# Version control, without the mystery
+
+Build a reliable project history, work confidently with collaborators,
+and connect your local work to GitHub.
+
+::: hero-actions
+[Open the presentation](presentation.html){.btn .btn-primary} [Read the
+setup guide](Setting-up-git.html){.btn .btn-secondary}
+:::
+:::::
+
+## Choose your starting point
+
+::::: resource-grid
+:::: resource-card
+::: resource-kicker
+01 / ORIENT
+:::
+
+### Presentation slides
+
+Get the big picture: version control concepts, Git vocabulary, GitHub
+workflows, and practical command-line patterns.
+
+[View the slides](presentation.html){.resource-link}
+
+[View the source file on GitHub](https://github.com/friedarosa/Version-control-and-git/blob/main/presentation.qmd){.source-link}
+::::
+
+:::: resource-card
+::: resource-kicker 
+02 / PREPARE
+
+### Setup guide
+
+Install Git, configure your identity, connect to GitHub, and get ready
+to work from your preferred coding environment.
+
+[Open the guide](Setting-up-git.html){.resource-link}
+
+[View the source file on GitHub](https://github.com/friedarosa/Version-control-and-git/blob/main/Setting-up-git.qmd){.source-link}
+::::
+:::::
+
+## Learning Objectives
+
+:::::: practice-list
+::: practice-item
+**01** Understand the benefits of version control.
+:::
+
+::: practice-item
+**02** Know where to find help when setting up Git and GitHub on your computer
+:::
+
+::: practice-item
+**03** Understand the concept of: `stage` (`add`), `commit`, `push`, `pull`, `clone`
+:::
+
+::: practice-item
+**04** Work with GitHub repositories from the command line, RStudio, Visual Studio Code, Positron... (wherever you do your coding)
+:::
+::::::
+
+::: site-note
+Created as an open teaching resource by Friederike Wölke (2026).
+:::

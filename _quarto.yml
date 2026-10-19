@@ -1,20 +1,35 @@
 project:
-  type: default
+  type: website
+  resources:
+    - presentation.html
+    - presentation_files
+    - img
+    - Setting-up-git.html
+
+website:
+  title: "Version Control & Git"
+  description: "A practical introduction to Git, GitHub, and reproducible project workflows."
+  navbar:
+    background: "#173f4f"
+    foreground: "#ffffff"
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Learn"
+        menu:
+          - text: "Presentation slides"
+            href: presentation.html
+          - text: "Setup guide"
+            href: Setting-up-git.html
+    right:
+      - icon: github
+        href: https://github.com/friedarosa/Version-control-and-git/
+        aria-label: "GitHub repository"
 
 format:
-  revealjs:
-    theme: default
-    css: styles.css
-    slide-number: c/t
-    width: 1600
-    height: 900
-    margin: 0.08
-    transition: fade
-    background-transition: fade
-    controls: true
-    navigation-mode: linear
-    code-line-numbers: true
-    highlight-style: github
-    preview-links: true
+  html:
+    theme: cosmo
+    css: site.css
+    toc: false
 execute:
   freeze: auto
