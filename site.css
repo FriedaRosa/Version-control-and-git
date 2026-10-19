@@ -148,7 +148,7 @@ h3 {
   margin-bottom: 4rem;
   padding: 0 max(7vw, calc((100vw - 1100px) / 2));
   position: relative;
-  left: 150%;
+  left: 110%;
   transform: translateX(-50%);
   width: 100vw;
 }
