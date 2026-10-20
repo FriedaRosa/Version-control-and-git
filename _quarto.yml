@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: .
   resources:
     - presentation.html
     - presentation_files
