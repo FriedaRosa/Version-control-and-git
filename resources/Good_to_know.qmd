@@ -38,11 +38,16 @@ editor_options:
 - Never ignore your .gitignore! Do some research which files can be excluded from git depending on your project, coding language and workflow. You can find out which files to ignore by searing on [gitignore.io](https://www.toptal.com/developers/gitignore/)
 
 
+**RStudio Integration with buttons and without code** 
+- When creating a new project tick the "initalize as git repository" box
+- If you want to convert a local folder into a git repo use "New project" > "New project" > "version control"
+- You will get a new panel "Git" or "SVN" (By default: upper right panel - where your environment is)
+
 **WINDOWS USERS:**
 
   - If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See [here](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings).)
   - Things are way easier for non-Windows users: Line endings (CRLF in windowns vs. LF in Unix-systems) can cause warnings and unnecessary complications when working with git. If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See [here](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings).)
-  - Windows users: If you use WSL for some projects (e.g. bash coding) make sure to set up your project within WSL and initate it as git repository there. Avoid se3tting up the project folder in Windows and trying to use it in WSL. This will cause problems like slow performane, file permission issues, line-ending problems, issues with symbolic links, inconsitent behavior of linux tools (especially when using R projects, python virtual environments, conda environments, nexflow pipelines, and bioinformatic workflows that creates thousands of files)
+  - Windows users: If you use WSL for some projects (e.g. bash coding) make sure to set up your project within WSL and initate it as git repository there. Avoid setting up the project folder in Windows and trying to use it in WSL. This will cause problems like slow performance, file permission issues, line-ending problems, issues with symbolic links, inconsistent behaviour of linux tools (especially when using R projects, python virtual environments, conda environments, nexflow pipelines, and bioinformatic workflows that creates thousands of files)
   - Set up your git on WSL is an extra step!
 
 **- BRANCHES: **
@@ -51,3 +56,31 @@ editor_options:
   - Always create a new branch for each new feature or change you are working on. 
   - When your changes are ready, you can merge the branch back into the main branch (usually called `main` or `master`). 
   - This helps keep the main branch stable and allows for easier collaboration with others.
+
+
+**- GitHub**
+
+- Perks of GitHub: The community!
+- Functionality
+- GitHub Copilot Student (Pro access via the university)
+- Markdown 🤝 GitHub
+- quick publish a website by creating an index.qmd, render it to .html and push to github. Will be [Your-User-Name].github.io/[repository name] (requirement: public repository)
+
+
+
+**- GitHub Pages**
+Easy workflow to get a website for your repository in less than a minute and with less than 10 steps!
+Prerequisites: use Markdown or Quarto 
+
+
+1. create a new project (either chose 'website' if you want the whole repo to become a website OR create a normal R project)
+2. create a new file, either: a) RMarkdown b) Quarto (works similar. Markdown is old, Quarto is new and has more functionalities and it has lots of shortcuts for formating and making things look pretty without knowledge of CSS)
+3. save it as index.qmd (quarto) or index.rmd (RMarkdown) or index.md (markdown) to your root folder
+4. knit (markdown) or render (quarto) your document (there is a button or use: `quarto render index.qmd`)
+5. initalize the git repository: switch from R Console to Bash Terminal
+`git add -A` (-A adds/stages all files) and then `git commit -am 'add webpage'` and `git push`
+6. Return to github, find your repository there; go to 'Settings' on your repository page 
+7. Find "Pages" on the left
+8. we will "deploy from branch" and the branch is currently "main". So we chose the main branch and use the /root folder. 
+9. Wait for the website to become live, there is a banner on top of the GitHub pages page that shows you the status and link of your website.
+10. DONE!
