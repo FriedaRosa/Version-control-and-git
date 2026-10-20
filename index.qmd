@@ -14,8 +14,9 @@ Build a reliable project history, work confidently with collaborators,
 and connect your local work to GitHub.
 
 ::: hero-actions
-[Open the presentation](presentation.html){.btn .btn-primary} [Read the
-setup guide](Setting-up-git.html){.btn .btn-secondary} [Read the tipps file (Good to know)](resources/Good_to_know.html){.btn .btn-secondary}
+[Open the presentation](presentation.html){.btn .btn-primary} 
+[Read the setup guide](Setting-up-git.html){.btn .btn-secondary} 
+[Read the tipps file (Good to know)](Good_to_know.html){.btn .btn-secondary}
 :::
 :::::
 
