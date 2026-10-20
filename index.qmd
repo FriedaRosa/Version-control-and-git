@@ -23,6 +23,7 @@ and connect your local work to GitHub.
 ## Choose your starting point
 
 ::::: resource-grid
+
 :::: resource-card
 ::: resource-kicker
 01 / ORIENT
@@ -41,6 +42,7 @@ workflows, and practical command-line patterns.
 :::: resource-card
 ::: resource-kicker 
 02 / PREPARE
+:::
 
 ### Setup guide
 
@@ -51,7 +53,25 @@ to work from your preferred coding environment.
 
 [View the source file on GitHub](https://github.com/friedarosa/Version-control-and-git/blob/main/Setting-up-git.qmd){.source-link}
 ::::
+
+:::: resource-card
+::: resource-kicker
+03 / LOOK UP
+:::
+
+### Good to know
+
+Useful tips and tricks for working with Git and GitHub.
+
+[Read the tips](Good_to_know.html){.resource-link}
+
+[View the source file on GitHub](https://github.com/friedarosa/Version-control-and-git/blob/main/Good_to_know.qmd){.source-link}
+
+::::
+
 :::::
+
+
 
 ## Learning Objectives
 

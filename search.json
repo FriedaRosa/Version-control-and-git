@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Version Control & Git",
+    "section": "",
+    "text": "TRAINING MATERIALS\n\n\n\nBuild a reliable project history, work confidently with collaborators, and connect your local work to GitHub.\n\nOpen the presentation Read the setup guide Read the tipps file (Good to know)"
+  },
+  {
+    "objectID": "index.html#choose-your-starting-point",
+    "href": "index.html#choose-your-starting-point",
+    "title": "Version Control & Git",
+    "section": "Choose your starting point",
+    "text": "Choose your starting point\n\n\n\n01 / ORIENT\n\n\nPresentation slides\nGet the big picture: version control concepts, Git vocabulary, GitHub workflows, and practical command-line patterns.\nView the slides\nView the source file on GitHub\n\n\n\n\n02 / PREPARE\n\n\nSetup guide\nInstall Git, configure your identity, connect to GitHub, and get ready to work from your preferred coding environment.\nOpen the guide\nView the source file on GitHub\n\n\n\n\n03 / LOOK UP\n\n\nGood to know\nUseful tips and tricks for working with Git and GitHub.\nRead the tips\nView the source file on GitHub"
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Version Control & Git",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\n\n01 Understand the benefits of version control.\n\n\n02 Know where to find help when setting up Git and GitHub on your computer\n\n\n03 Understand the concept of: stage (add), commit, push, pull, clone\n\n\n04 Work with GitHub repositories from the command line, RStudio, Visual Studio Code, Positron… (wherever you do your coding)\n\n\n\nCreated as an open teaching resource by Friederike Wölke (2026)."
+  }
+]

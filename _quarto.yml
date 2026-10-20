@@ -22,6 +22,8 @@ website:
             href: presentation.html
           - text: "Setup guide"
             href: Setting-up-git.html
+          - text: "Good to know"
+            href: Good_to_know.html
     right:
       - icon: github
         href: https://github.com/friedarosa/Version-control-and-git/
