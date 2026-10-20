@@ -1,0 +1,193 @@
+:root {
+  --ink: #18343b;
+  --muted: #5b6e70;
+  --paper: #f6f3ed;
+  --panel: #ffffff;
+  --teal: #176b68;
+  --coral: #d95f45;
+  --line: #d8dfda;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.navbar-brand,
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS", "Avenir Next", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(120deg, #173f4f 0%, #176b68 62%, #d95f45 150%);
+  color: #ffffff;
+  margin: -1rem calc(50% - 50vw) 0;
+  padding: clamp(5rem, 12vw, 9rem) max(7vw, calc((100vw - 1100px) / 2));
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  content: "";
+  height: 24rem;
+  position: absolute;
+  right: -7rem;
+  top: -8rem;
+  width: 24rem;
+}
+
+.eyebrow,
+.resource-kicker {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.eyebrow {
+  color: #f4c5a9;
+}
+
+.hero h1 {
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  letter-spacing: 0;
+  line-height: 0.98;
+  margin: 1rem 0 1.5rem;
+  max-width: 850px;
+}
+
+.hero p {
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.5;
+  max-width: 670px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  border-radius: 0.2rem;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0.8rem 1.1rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #f4c5a9;
+  color: var(--ink);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+.resource-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.5rem 0 5rem;
+}
+
+.resource-card {
+  background: var(--panel);
+  border-top: 5px solid var(--teal);
+  box-shadow: 0 1rem 2rem rgba(24, 52, 59, 0.08);
+  padding: 2rem;
+}
+
+.resource-card-setup {
+  border-top-color: var(--coral);
+}
+
+.resource-kicker {
+  color: var(--muted);
+}
+
+.resource-card h3 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.resource-card p {
+  color: var(--muted);
+  min-height: 5rem;
+}
+
+.resource-link,
+.source-link {
+  display: block;
+  font-weight: 700;
+  margin-top: 1.25rem;
+}
+
+.resource-link {
+  color: var(--teal);
+  font-size: 1.1rem;
+}
+
+.source-link {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.practice-list {
+  box-sizing: border-box;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 4rem;
+  padding: 0 max(7vw, calc((100vw - 1100px) / 2));
+  position: relative;
+  left: 110%;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+.practice-item {
+  background: var(--panel);
+  border-top: 4px solid var(--teal);
+  box-shadow: 0 0.7rem 1.5rem rgba(24, 52, 59, 0.06);
+  padding: 1.3rem;
+}
+
+.practice-item strong {
+  color: var(--coral);
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+}
+
+.site-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+  .resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .practice-list {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-card p {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .practice-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
