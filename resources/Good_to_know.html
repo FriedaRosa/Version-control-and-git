@@ -2175,7 +2175,7 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes"><span class="header-section-number">1</span> Notes:</a>
+  <li><a href="#tips" id="toc-tips" class="nav-link active" data-scroll-target="#tips"><span class="header-section-number">1</span> Tips:</a>
   <ul class="collapse">
   <li><a href="#not-to-dos" id="toc-not-to-dos" class="nav-link" data-scroll-target="#not-to-dos"><span class="header-section-number">1.1</span> <strong>NOT TO DOs:</strong></a></li>
   <li><a href="#rstudio-integration-with-buttons-and-without-code" id="toc-rstudio-integration-with-buttons-and-without-code" class="nav-link" data-scroll-target="#rstudio-integration-with-buttons-and-without-code"><span class="header-section-number">1.2</span> <strong>RStudio Integration with buttons and without code</strong></a></li>
@@ -2184,6 +2184,7 @@ vertical-align: -.125em;
   <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches"><span class="header-section-number">1.5</span> <strong>BRANCHES: </strong></a></li>
   <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">1.6</span> <strong>GitHub</strong></a></li>
   <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">1.7</span> <strong>GitHub Pages</strong></a></li>
+  <li><a href="#gitting-alone-vs.-gitting-with-collaborators" id="toc-gitting-alone-vs.-gitting-with-collaborators" class="nav-link" data-scroll-target="#gitting-alone-vs.-gitting-with-collaborators"><span class="header-section-number">1.8</span> <strong>Gitting alone vs. gitting with collaborators</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -2222,8 +2223,8 @@ vertical-align: -.125em;
 </header>
 
 
-<section id="notes" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="notes"><span class="header-section-number">1</span> Notes:</h2>
+<section id="tips" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tips"><span class="header-section-number">1</span> Tips:</h2>
 <section id="not-to-dos" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="not-to-dos"><span class="header-section-number">1.1</span> <strong>NOT TO DOs:</strong></h3>
 <ul>
@@ -2267,6 +2268,26 @@ vertical-align: -.125em;
 <li>Always create a new branch for each new feature or change you are working on.</li>
 <li>When your changes are ready, you can merge the branch back into the main branch (usually called <code>main</code> or <code>master</code>).</li>
 <li>This helps keep the main branch stable and allows for easier collaboration with others.</li>
+<li>To bring your changes back to the main branch, you need to make a pull request. The goal is to review the changes and make sure you are not accidentally overwriting or deleting files.</li>
+<li>3 Types of pull requests: <a href="https://lukemerrett.com/different-merge-types-in-git/">Source and more Details</a>
+<ol type="1">
+<li>Merge commit:</li>
+</ol>
+<ul>
+<li>preserves branch commits and records the merge</li>
+</ul>
+<ol start="2" type="1">
+<li>Squash merge:</li>
+</ol>
+<ul>
+<li>Adds one combined commit to the target branch</li>
+</ul>
+<ol start="3" type="1">
+<li>Rebase merge:</li>
+</ol>
+<ul>
+<li>Adds the new branch at the end of the main branch (makes a linear history)</li>
+</ul></li>
 </ul>
 </section>
 <section id="github" class="level3" data-number="1.6">
@@ -2277,6 +2298,8 @@ vertical-align: -.125em;
 <li>GitHub Copilot Student (Pro access via the university)</li>
 <li>Markdown 🤝 GitHub</li>
 <li>quick publish a website by creating an index.qmd, render it to .html and push to github. Will be [Your-User-Name].github.io/[repository name] (requirement: public repository)</li>
+<li>Wikis! -&gt; provide longer-term guidance across multiple topics</li>
+<li>You can set up repositories as templates and then whenever you want to start a new project you can clone your template repo and don’t have to spend time on setting up the same folder structures over and over</li>
 </ul>
 </section>
 <section id="github-pages" class="level3" data-number="1.7">
@@ -2294,6 +2317,17 @@ vertical-align: -.125em;
 <li>Wait for the website to become live, there is a banner on top of the GitHub pages page that shows you the status and link of your website.</li>
 <li>DONE!</li>
 </ol>
+</section>
+<section id="gitting-alone-vs.-gitting-with-collaborators" class="level3" data-number="1.8">
+<h3 data-number="1.8" class="anchored" data-anchor-id="gitting-alone-vs.-gitting-with-collaborators"><span class="header-section-number">1.8</span> <strong>Gitting alone vs. gitting with collaborators</strong></h3>
+<ul>
+<li>You can totally exploit most functions in GitHub for your own work.</li>
+<li>“Issues” on github are usually related to bugs in the code or questions from users if something does not work. This doesn’t have to be the case if you work alone (although it can be)</li>
+<li>You can use Issues as a task tracker for your projects. Tasks should be actionable: 1) what job has to be done 2) are there dependecies to consider 3) Who will do it (if you are working alone - this does not matter too much) 4) How long will each task take? 5) What should be the result?</li>
+<li>Issues has discussions attached so you can comment on them.</li>
+<li>Once the task has been completed you can close the issue.</li>
+<li>“Labels” show recurring tags such as Type, Status, Priority</li>
+</ul>
 </section>
 </section>
 

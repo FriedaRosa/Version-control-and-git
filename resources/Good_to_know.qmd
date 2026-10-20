@@ -26,7 +26,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Notes:
+## Tips:
 
 ### **NOT TO DOs:**
 
@@ -62,6 +62,14 @@ editor_options:
   - Always create a new branch for each new feature or change you are working on. 
   - When your changes are ready, you can merge the branch back into the main branch (usually called `main` or `master`). 
   - This helps keep the main branch stable and allows for easier collaboration with others.
+  - To bring your changes back to the main branch, you need to make a pull request. The goal is to review the changes and make sure you are not accidentally overwriting or deleting files.
+  - 3 Types of pull requests: [Source and more Details](https://lukemerrett.com/different-merge-types-in-git/)
+    1) Merge commit:
+      - preserves branch commits and records the merge 
+    2) Squash merge: 
+      - Adds one combined commit to the target branch
+    3) Rebase merge:
+      - Adds the new branch at the end of the main branch (makes a linear history)
 
 
 ### **GitHub**
@@ -71,6 +79,8 @@ editor_options:
 - GitHub Copilot Student (Pro access via the university)
 - Markdown 🤝 GitHub
 - quick publish a website by creating an index.qmd, render it to .html and push to github. Will be [Your-User-Name].github.io/[repository name] (requirement: public repository)
+- Wikis! -> provide longer-term guidance across multiple topics
+- You can set up repositories as templates and then whenever you want to start a new project you can clone your template repo and don't have to spend time on setting up the same folder structures over and over
 
 
 
@@ -90,3 +100,13 @@ Prerequisites: use Markdown or Quarto
 8. we will "deploy from branch" and the branch is currently "main". So we chose the main branch and use the /root folder. 
 9. Wait for the website to become live, there is a banner on top of the GitHub pages page that shows you the status and link of your website.
 10. DONE!
+
+
+### **Gitting alone vs. gitting with collaborators**
+- You can totally exploit most functions in GitHub for your own work.
+- "Issues" on github are usually related to bugs in the code or questions from users if something does not work. This doesn't have to be the case if you work alone (although it can be)
+- You can use Issues as a task tracker for your projects. Tasks should be actionable: 1) what job has to be done 2) are there dependecies to consider 3) Who will do it (if you are working alone - this does not matter too much) 4) How long will each task take? 5) What should be the result?
+- Issues has discussions attached so you can comment on them.
+- Once the task has been completed you can close the issue.
+- "Labels" show recurring tags such as Type, Status, Priority
+
