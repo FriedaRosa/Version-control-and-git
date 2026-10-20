@@ -1,0 +1,41 @@
+---
+title: "Good to know when working with Git"
+subtitle: '... and GitHub'
+date: last-modified
+date-format: long
+author:
+  - name: 'Friederike Wölke'
+    orcid: 0000-0001-9034-4883
+    email: friederike.wolke@su.se
+format: 
+  html:
+    toc: true
+    number-sections: true
+    format-links: [pdf]
+    toc-location: right
+    code-fold: false
+    collapse: true
+    smooth-scroll: true
+    html-math-method: katex
+    search: true
+    repo-url: https://github.com/friedarosa/Version-control-and-git/
+self-contained: true
+code-overflow: wrap
+editor: source
+editor_options: 
+  chunk_output_type: console
+---
+
+## Notes:
+- Never link a cloud folder to git (e.g., Box, OneDrive, Dropbox, Google Drive) as it will mess up your cloud folder AND your git. 
+- Things are way easier for non-Windows users: Line endings (CRLF in windowns vs. LF in Unix-systems) can cause warnings and unnecessary complications when working with git. If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See [here](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings).)
+- Windows users: If you use WSL for some projects (e.g. bash coding) make sure to set up your project within WSL and initate it as git repository there. Avoid se3tting up the project folder in Windows and trying to use it in WSL. This will cause problems like slow performane, file permission issues, line-ending problems, issues with symbolic links, inconsitent behavior of linux tools (especially when using R projects, python virtual environments, conda environments, nexflow pipelines, and bioinformatic workflows that creates thousands of files)
+- Set up your git on WSL is an extra step!
+- Never make commits of many files as once. It will be useless when you want to go back to a previous version. Only commit files together that are related to each other or depend on the same kind of change. If you are working on a project with multiple people, it is even more important to make small commits.
+- Branches: 
+  - Branches are a great way to work on new features or changes without affecting the main codebase. 
+  - Always create a new branch for each new feature or change you are working on. 
+  - When your changes are ready, you can merge the branch back into the main branch (usually called `main` or `master`). 
+  - This helps keep the main branch stable and allows for easier collaboration with others.
+- Never store very large data on GitHub. There are limits to the size of files. If you want some medium-sized files in Git, initalize the repository with Git Large File Storage (LFS). If you have very large files, consider using a cloud storage service (e.g., Box, OneDrive, Dropbox, Google Drive) and link to them in your repository.
+- Git is **not** a backup solution. It is a version control system. Make sure to have a backup of your data in case something goes wrong. Remember that only files that you commit to git will be "backed up". Raw data is usually not committed to git - so your project becomes useless if you rely on git for backup. Removing files from git will remove them from your local folder as well. You can delete repositories on GitHub and they will be gone forever. Make sure to have a backup of your data in case something goes wrong.
