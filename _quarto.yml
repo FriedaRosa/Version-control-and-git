@@ -5,6 +5,7 @@ project:
     - presentation_files
     - img
     - Setting-up-git.html
+    - Good_to_know.html
 
 website:
   title: "Version Control & Git"
