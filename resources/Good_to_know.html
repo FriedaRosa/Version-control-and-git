@@ -2175,7 +2175,16 @@ vertical-align: -.125em;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes"><span class="header-section-number">1</span> Notes:</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes"><span class="header-section-number">1</span> Notes:</a>
+  <ul class="collapse">
+  <li><a href="#not-to-dos" id="toc-not-to-dos" class="nav-link" data-scroll-target="#not-to-dos"><span class="header-section-number">1.1</span> <strong>NOT TO DOs:</strong></a></li>
+  <li><a href="#rstudio-integration-with-buttons-and-without-code" id="toc-rstudio-integration-with-buttons-and-without-code" class="nav-link" data-scroll-target="#rstudio-integration-with-buttons-and-without-code"><span class="header-section-number">1.2</span> <strong>RStudio Integration with buttons and without code</strong></a></li>
+  <li><a href="#visual-studio-code" id="toc-visual-studio-code" class="nav-link" data-scroll-target="#visual-studio-code"><span class="header-section-number">1.3</span> <strong>Visual Studio Code</strong>:</a></li>
+  <li><a href="#windows-users" id="toc-windows-users" class="nav-link" data-scroll-target="#windows-users"><span class="header-section-number">1.4</span> <strong>WINDOWS USERS:</strong></a></li>
+  <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches"><span class="header-section-number">1.5</span> <strong>BRANCHES: </strong></a></li>
+  <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github"><span class="header-section-number">1.6</span> <strong>GitHub</strong></a></li>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="header-section-number">1.7</span> <strong>GitHub Pages</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
 </div>
@@ -2215,7 +2224,8 @@ vertical-align: -.125em;
 
 <section id="notes" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="notes"><span class="header-section-number">1</span> Notes:</h2>
-<p><strong>NOT TO DOs:</strong></p>
+<section id="not-to-dos" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="not-to-dos"><span class="header-section-number">1.1</span> <strong>NOT TO DOs:</strong></h3>
 <ul>
 <li>Never link a cloud folder to git (e.g., Box, OneDrive, Dropbox, Google Drive) as it will mess up your cloud folder AND your git.</li>
 <li>Never make commits of many files as once. It will be useless when you want to go back to a previous version. Only commit files together that are related to each other or depend on the same kind of change. If you are working on a project with multiple people, it is even more important to make small commits.</li>
@@ -2224,22 +2234,43 @@ vertical-align: -.125em;
 <li>Never commit any credentials/passwords to git. If you do, they will be public and anyone can access your accounts. Use environment variables or a separate configuration file that is not tracked by git to store sensitive information. If it happens - you have to delete the whole repository from GitHub and create a new one.</li>
 <li>Never ignore your .gitignore! Do some research which files can be excluded from git depending on your project, coding language and workflow. You can find out which files to ignore by searing on <a href="https://www.toptal.com/developers/gitignore/">gitignore.io</a></li>
 </ul>
-<p><strong>RStudio Integration with buttons and without code</strong> - When creating a new project tick the “initalize as git repository” box - If you want to convert a local folder into a git repo use “New project” &gt; “New project” &gt; “version control” - You will get a new panel “Git” or “SVN” (By default: upper right panel - where your environment is)</p>
-<p><strong>WINDOWS USERS:</strong></p>
+</section>
+<section id="rstudio-integration-with-buttons-and-without-code" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="rstudio-integration-with-buttons-and-without-code"><span class="header-section-number">1.2</span> <strong>RStudio Integration with buttons and without code</strong></h3>
+<ul>
+<li>When creating a new project tick the “initalize as git repository” box</li>
+<li>If you want to convert a local folder into a git repo use “New project” &gt; “New project” &gt; “version control”</li>
+<li>You will get a new panel “Git” or “SVN” (By default: upper right panel - where your environment is)</li>
+<li>You can see changes, stage, commit, push, pull from there</li>
+</ul>
+</section>
+<section id="visual-studio-code" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="visual-studio-code"><span class="header-section-number">1.3</span> <strong>Visual Studio Code</strong>:</h3>
+<ul>
+<li>Source Control panel on the left</li>
+<li>“Synchronize” is a function that first pulls and then pushes your changes. It’s useful to avoid running into conflicts</li>
+</ul>
+</section>
+<section id="windows-users" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="windows-users"><span class="header-section-number">1.4</span> <strong>WINDOWS USERS:</strong></h3>
 <ul>
 <li>If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See <a href="https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings">here</a>.)</li>
 <li>Things are way easier for non-Windows users: Line endings (CRLF in windowns vs. LF in Unix-systems) can cause warnings and unnecessary complications when working with git. If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See <a href="https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings">here</a>.)</li>
 <li>Windows users: If you use WSL for some projects (e.g. bash coding) make sure to set up your project within WSL and initate it as git repository there. Avoid setting up the project folder in Windows and trying to use it in WSL. This will cause problems like slow performance, file permission issues, line-ending problems, issues with symbolic links, inconsistent behaviour of linux tools (especially when using R projects, python virtual environments, conda environments, nexflow pipelines, and bioinformatic workflows that creates thousands of files)</li>
 <li>Set up your git on WSL is an extra step!</li>
 </ul>
-<p><strong>- BRANCHES: </strong></p>
+</section>
+<section id="branches" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="branches"><span class="header-section-number">1.5</span> <strong>BRANCHES: </strong></h3>
 <ul>
 <li>Branches are a great way to work on new features or changes without affecting the main codebase.</li>
 <li>Always create a new branch for each new feature or change you are working on.</li>
 <li>When your changes are ready, you can merge the branch back into the main branch (usually called <code>main</code> or <code>master</code>).</li>
 <li>This helps keep the main branch stable and allows for easier collaboration with others.</li>
 </ul>
-<p><strong>- GitHub</strong></p>
+</section>
+<section id="github" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="github"><span class="header-section-number">1.6</span> <strong>GitHub</strong></h3>
 <ul>
 <li>Perks of GitHub: The community!</li>
 <li>Functionality</li>
@@ -2247,7 +2278,10 @@ vertical-align: -.125em;
 <li>Markdown 🤝 GitHub</li>
 <li>quick publish a website by creating an index.qmd, render it to .html and push to github. Will be [Your-User-Name].github.io/[repository name] (requirement: public repository)</li>
 </ul>
-<p><strong>- GitHub Pages</strong> Easy workflow to get a website for your repository in less than a minute and with less than 10 steps! Prerequisites: use Markdown or Quarto</p>
+</section>
+<section id="github-pages" class="level3" data-number="1.7">
+<h3 data-number="1.7" class="anchored" data-anchor-id="github-pages"><span class="header-section-number">1.7</span> <strong>GitHub Pages</strong></h3>
+<p>Easy workflow to get a website for your repository in less than a minute and with less than 10 steps! Prerequisites: use Markdown or Quarto</p>
 <ol type="1">
 <li>create a new project (either chose ‘website’ if you want the whole repo to become a website OR create a normal R project)</li>
 <li>create a new file, either: a) RMarkdown b) Quarto (works similar. Markdown is old, Quarto is new and has more functionalities and it has lots of shortcuts for formating and making things look pretty without knowledge of CSS)</li>
@@ -2260,6 +2294,7 @@ vertical-align: -.125em;
 <li>Wait for the website to become live, there is a banner on top of the GitHub pages page that shows you the status and link of your website.</li>
 <li>DONE!</li>
 </ol>
+</section>
 </section>
 
 </main>

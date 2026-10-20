@@ -28,7 +28,7 @@ editor_options:
 
 ## Notes:
 
-**NOT TO DOs:**
+### **NOT TO DOs:**
 
 - Never link a cloud folder to git (e.g., Box, OneDrive, Dropbox, Google Drive) as it will mess up your cloud folder AND your git. 
 - Never make commits of many files as once. It will be useless when you want to go back to a previous version. Only commit files together that are related to each other or depend on the same kind of change. If you are working on a project with multiple people, it is even more important to make small commits.
@@ -38,19 +38,25 @@ editor_options:
 - Never ignore your .gitignore! Do some research which files can be excluded from git depending on your project, coding language and workflow. You can find out which files to ignore by searing on [gitignore.io](https://www.toptal.com/developers/gitignore/)
 
 
-**RStudio Integration with buttons and without code** 
+### **RStudio Integration with buttons and without code** 
 - When creating a new project tick the "initalize as git repository" box
 - If you want to convert a local folder into a git repo use "New project" > "New project" > "version control"
 - You will get a new panel "Git" or "SVN" (By default: upper right panel - where your environment is)
+- You can see changes, stage, commit, push, pull from there 
 
-**WINDOWS USERS:**
+
+### **Visual Studio Code**:
+- Source Control panel on the left
+- "Synchronize" is a function that first pulls and then pushes your changes. It's useful to avoid running into conflicts
+
+### **WINDOWS USERS:**
 
   - If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See [here](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings).)
   - Things are way easier for non-Windows users: Line endings (CRLF in windowns vs. LF in Unix-systems) can cause warnings and unnecessary complications when working with git. If you are a Windows user, make sure to set the line endings to LF in your git settings (when appropriate..) or convert a windows-made file to LF using: dos2unix [FILENAME]. (How do I do that? See [here](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings).)
   - Windows users: If you use WSL for some projects (e.g. bash coding) make sure to set up your project within WSL and initate it as git repository there. Avoid setting up the project folder in Windows and trying to use it in WSL. This will cause problems like slow performance, file permission issues, line-ending problems, issues with symbolic links, inconsistent behaviour of linux tools (especially when using R projects, python virtual environments, conda environments, nexflow pipelines, and bioinformatic workflows that creates thousands of files)
   - Set up your git on WSL is an extra step!
 
-**- BRANCHES: **
+### **BRANCHES: **
 
   - Branches are a great way to work on new features or changes without affecting the main codebase. 
   - Always create a new branch for each new feature or change you are working on. 
@@ -58,7 +64,7 @@ editor_options:
   - This helps keep the main branch stable and allows for easier collaboration with others.
 
 
-**- GitHub**
+### **GitHub**
 
 - Perks of GitHub: The community!
 - Functionality
@@ -68,7 +74,7 @@ editor_options:
 
 
 
-**- GitHub Pages**
+### **GitHub Pages**
 Easy workflow to get a website for your repository in less than a minute and with less than 10 steps!
 Prerequisites: use Markdown or Quarto 
 
